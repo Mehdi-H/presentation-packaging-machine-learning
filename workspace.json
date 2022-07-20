@@ -1,0 +1,105 @@
+{
+  "id" : 1,
+  "name" : "Name",
+  "description" : "Description",
+  "revision" : 0,
+  "lastModifiedDate" : "2022-07-06T12:58:11Z",
+  "lastModifiedAgent" : "structurizr-web/2753/diagram",
+  "properties" : {
+    "structurizr.dsl" : "IWNvbnN0YW50IE9SR0FOSVNBVElPTl9OQU1FICJGYWN0b3J5LUNvbXBhbnkiCgp3b3Jrc3BhY2UgewoKICAgIG1vZGVsIHsKICAgICAgICBncm91cCAiUGxhbnQt8J+PrSIgewogICAgICAgICAgICBwbGFudE9wZXJhdG9yID0gcGVyc29uICJQbGFudCBPcGVyYXRvciIKICAgICAgICAgICAgZWRnZUNvbXB1dGVyID0gc29mdHdhcmVTeXN0ZW0gIkVkZ2UgQ29tcHV0ZXIgMSIgIldlYiBicm93c2VyIgoKICAgICAgICAgICAgcGxhbnRPcGVyYXRvciAtPiBlZGdlQ29tcHV0ZXIgIlRha2VzIHBob3RvIgogICAgICAgICAgICBlZGdlQ29tcHV0ZXIgLT4gcGxhbnRPcGVyYXRvciAiUHJlZGljdHMgcXVhbGl0eSBkZWZlY3RzIHByZXNlbmNlIGFuZCBncmF2aXR5IgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIkFJLSYtUXVhbGl0eSIgewogICAgICAgICAgICBjcm0gPSBzb2Z0d2FyZVN5c3RlbSAiQ1JNIgogICAgICAgIH0KICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtTGFuZHNjYXBlICIke09SR0FOSVNBVElPTl9OQU1FfSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgdGhlbWUgZGVmYXVsdAogICAgfQoKfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "name" : "Plant Operator",
+      "relationships" : [ {
+        "id" : "3",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "2",
+        "description" : "Takes photo"
+      } ],
+      "group" : "Plant-🏭",
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "5",
+      "tags" : "Element,Software System",
+      "name" : "CRM",
+      "group" : "AI-&-Quality",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "2",
+      "tags" : "Element,Software System",
+      "name" : "Edge Computer 1",
+      "description" : "Web browser",
+      "relationships" : [ {
+        "id" : "4",
+        "tags" : "Relationship",
+        "sourceId" : "2",
+        "destinationId" : "1",
+        "description" : "Predicts quality defects presence and gravity"
+      } ],
+      "group" : "Plant-🏭",
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "Factory-Company",
+      "order" : 1,
+      "paperSize" : "A5_Landscape",
+      "dimensions" : {
+        "width" : 1833,
+        "height" : 1658
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 353,
+        "y" : 328
+      }, {
+        "id" : "2",
+        "x" : 328,
+        "y" : 1028
+      }, {
+        "id" : "5",
+        "x" : 1053,
+        "y" : 378
+      } ],
+      "relationships" : [ {
+        "id" : "3",
+        "vertices" : [ {
+          "x" : 403,
+          "y" : 853
+        } ]
+      }, {
+        "id" : "4",
+        "vertices" : [ {
+          "x" : 703,
+          "y" : 853
+        } ]
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "lastSavedView" : "Factory-Company"
+    }
+  }
+}

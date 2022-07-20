@@ -1,3 +1,8 @@
+.DS_Store
+.vscode
+presentation_packaging_model.egg-info/
+build/
+
 # Logs
 logs
 *.log
